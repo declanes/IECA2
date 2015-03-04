@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>IECA - HINÁRIO EVANGÉLICO</title>
+<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="css/addons/jquery.mmenu.dragopen.css" />
+        <link type="text/css" rel="stylesheet" href="css/screen.css" />
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+h4 {
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Arial;
+}
+h2 {
+	font-size: 1em;
+}
+h3 {
+	font-size: 14px;
+}
+h5 {
+	font-size: 10px;
+}
+h6 {
+	font-size: 9px;
+}
+a {
+	font-family: Arial;
+	font-size: 12px;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<style type="text/css">
+body,td,th {
+	font-size: 10px;
+}
+</style>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/hammer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript" src="js/addons/jquery.mmenu.dragopen.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+		
+        
+       
+		<script type="text/javascript" src="js/addons/jquery.mmenu.fixedelements.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $menu = $('nav#menu'),
+					$html = $('html, body');
+
+				$menu.mmenu({
+					dragOpen: true
+				});
+
+				$menu.find( 'li > a' ).on(
+					'click',
+					function( e )
+					{
+						var href = $(this).attr( 'href' );
+
+						//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+						if ( href.slice( 0, 1 ) == '#' )
+						{
+							$menu.one(
+								'closed.mm',
+								function()
+								{
+									setTimeout(
+										function()
+										{
+											$html.animate({
+												scrollTop: $( href ).offset().top
+											});	
+										}, 10
+									);	
+								}
+							);
+						}
+					}
+				);
+			});
+		</script>
+</head> 
+<body> 
+
+<div data-role="page" data-theme="c">
+<div class="header" style="position:fixed; top:0px; height:40px; z-index:1000">
+<a href="index.html#menu"></a>PORTUGUÊS
+</div>
+<div style="position:fixed; top:40px; z-index:1000" data-role="footer" >	
+<img src="images/logo-ieca.png" width="38" height="40" align="left">	
+  <center>
+   <font size="3">
+   <h2>HINÁRIO EVANGÉLICO</h2></font>
+   </center>
+		
+  </div>
+<div data-theme="b">
+    <table width="100%" border="0" align="left" class="content">
+     <tr>  <td align="left">
+     <ul data-role="listview" data-filter="true" data-filter-placeholder="Pesquisar" data-filter-theme="d">
+      
+         <li><a href="10.html" target="_self">A CRISTO COROAI<BR><font size="1">Hino nº 10</font></a></li>
+<li><a href="31.html" target="_self">A DEUS DÊMOS GLÓRIA<BR><font size="1">Hino nº 31</font></a></li>
+<li><a href="369.html" target="_self">A DEUS O PAI, E A DEUS O FILHO<BR><font size="1">Hino nº 369</font></a></li>
+<li><a href="366.html" target="_self">A DEUS SUPREMO BENFEITOR<BR><font size="1">Hino nº 366</font></a></li>
+<li><a href="158" target="_self">A JESUS CRISTO CONTAREI TUDO<BR><font size="1">Hino nº 158</font></a></li>
+<li><a href="15.html" target="_self">A JESUS O REI DA GLÓRIA<BR><font size="1">Hino nº 15</font></a></li>
+<li><a href="175.html" target="_self">A MENSAGEM DO SENHOR ALELUIA!<BR><font size="1">Hino nº 175</font></a></li>
+<li><a href="288.html" target="_self">A MENSAGEM VEM DE DEUS<BR><font size="1">Hino nº 288</font></a></li>
+<li><a href="27.html" target="_self">A NOSSO PAI NO CÉU<BR><font size="1">Hino nº 27</font></a></li>
+<li><a href="230.html" target="_self">A SAMUEL, DEUS FALOU<BR><font size="1">Hino nº 230</font></a></li>
+<li><a href="351.html">A TARDE VEIO A MULTIDÃO<BR><font size="1">Hino nº 351</font></a></li>
+<li><a href="155.html" target="_self">A TERNA VOZ DO BOM JESUS<BR><font size="1">Hino nº 155</font></a></li>
+<li><a href="311.html" target="_self">A TERRA SEMEAMOS<BR><font size="1">Hino nº 311</font></a></li>
+<li><a href="80.html" target="_self">A TI A GLÓRIA<BR><font size="1">Hino nº 80</font></a></li>
+<li><a href="56.html" target="_self">A TI HOSANA É GLÓRIA<BR><font size="1">Hino nº 56</font></a></li>
+<li><a href="179" target="_self">A TI ORAMOS COM FERVOR<BR><font size="1">Hino nº 179</font></a></li>
+<li><a href="231.html" target="_self">A VOZ DE DEUS NOS CHAMA<BR><font size="1">Hino nº 231</font></a></li>
+<li><a href="361.html" target="_self">ABENÇOE A NOSSA TERRA, Ó DEUS<BR><font size="1">Hino nº 361</font></a></li>
+<li><a href="120.html" target="_self">ABENÇOADO É O LAR QUE CAMINHA<BR><font size="1">Hino nº 120</font></a></li>
+<li><a href="71.html" target="_self">ACHEI A FONTE CARMESIM<BR><font size="1">Hino nº 71</font></a></li>
+<li><a href="325.html" target="_self">ADEUS IRMÃO TE DESEJAMOS BEM<BR><font size="1">Hino nº 325</font></a></li>
+<li><a href="349.html" target="_self">ADEUS. ADEUS. ADEUS<BR><font size="1">Hino nº 349</font></a></li>
+<li><a href="72.html" target="_self">AFLITO E TRISTE CORAÇÃO<BR><font size="1">Hino nº 72</font></a></li>
+<li><a href="43.html" target="_self">AH! UM ANJO PROCLAMOU O PRIMEIRO NATAL<BR><font size="1">Hino nº 43</font></a></li>
+<li><a href="16.html" target="_self">ALEGRE ME SENTI<BR><font size="1">Hino nº 16</font></a></li>
+<li><a href="313.html" target="_self">ALEGRES ESTÃO AS NOSSAS ALMAS<BR><font size="1">Hino nº 313</font></a></li>
+<li><a href="126.html" target="_self">ALEGRES HOJE NÓS VIEMOS<BR><font size="1">Hino nº 126</font></a></li>
+<li><a href="82.html" target="_self">ALELUIA! RESSURGIU<BR><font size="1">Hino nº 82</font></a></li>
+<li><a href="51.html" target="_self">ALERTA Ó TERRA ENTOA<BR><font size="1">Hino nº 51</font></a></li>
+<li><a href="283.html" target="_self">ALGUÉM O AMOR DE CRISTO MOSTROU<BR><font size="1">Hino nº 283</font></a></li>
+<li><a href="168.html" target="_self">ALMA, QUE AFLITA ESTÁS<BR><font size="1">Hino nº 168</font></a></li>
+<li><a href="125.html" target="_self">ALMEJO IR PARA CASA, AFIM DE ESTAR<BR><font size="1">Hino nº 125</font></a></li>
+<li><a href="14.html" target="_self">ALTAMENTE OS CÉUS PROCLAMAM<BR><font size="1">Hino nº 14</font></a></li>
+<li><a href="319.html" target="_self">AMIGOS MEUS É DOCE<BR><font size="1">Hino nº 319</font></a></li>
+<li><a href="309.html">AMOR QUE POR AMOR DESCESTE<BR><font size="1">Hino nº 309</font></a></li>
+<li><a href="40.html" target="_self">ANJOS DA MAIS ALTA GLÓRIA<BR><font size="1">Hino nº 40</font></a></li>
+<li><a href="331.html" target="_self">ANSEIO A PAZ QUE QUAL UM RIO<BR><font size="1">Hino nº 331</font></a></li>
+<li><a href="64.html" target="_self">AO PÉ DA CRUZ DE CRISTO<BR><font size="1">Hino nº 64</font></a></li>
+<li><a href="8.html" target="_self">AO REI ADORAI, COM GLÓRIA E LOUVOR<BR><font size="1">Hino nº 8</font></a></li>
+<li><a href="333.html" target="_self">AO SENHOR JESUS LOUVAI<BR><font size="1">Hino nº 333</font></a></li>
+<li><a href="105.html" target="_self">AQUI, REUNIDOS VEMOS O SENHOR<BR><font size="1">Hino nº105</font></a></li>
+<li><a href="102.html" target="_self">AS ÁGUAS DO JORDÃO DESCEU<BR><font size="1">Hino nº 102</font></a></li>
+<li><a href="286.html" target="_self">AS NAÇÕES CONTAREMOS A HISTÓRIA<BR><font size="1">Hino nº 286</font></a></li>
+<li><a href="196.html" target="_self">AS TUAS MÃOS DIRIGEM MEU DESTINO<BR><font size="1">Hino nº 196</font></a></li>
+<li><a href="299.html" target="_self">AVANÇAI! AVANÇAI! DERRAMAI ESSA LUZ<BR><font size="1">Hino nº 299</font></a></li>
+<li><a href="300.html" target="_self">AVANTE! AVANTE! Ó CRENTES<BR><font size="1">Hino nº 300</font></a></li>
+<li><a href="294.html" target="_self">AVANTE, Ó CAMARADAS<BR><font size="1">Hino nº 294</font></a></li>
+<li><a href="3.html" target="_self">BEM CEDINHO AO TEMPLO VOU<BR><font size="1">Hino nº 3</font></a></li>
+<li><a href="310.html" target="_self">BEM LONGE DE DEUS EU ANDAVA<BR><font size="1">Hino nº 310</font></a></li>
+<li><a href="189.html" target="_self">BENDITA HORA DE ORAÇÃO<BR><font size="1">Hino nº 189</font></a></li>
+<li><a href="101.html" target="_self">BENDITOS LAÇOS SÃO<BR><font size="1">Hino nº 101</font></a></li>
+<li><a href="30.html" target="_self">BENDIZE, Ó TU, MEU CORAÇÃO<BR><font size="1">Hino nº 30</font></a></li>
+<li><a href="111.html" target="_self">BOM É O ALIMENTO<BR><font size="1">Hino nº 111</font></a></li>
+<li><a href="346.html" target="_self">BREVE, EM GLÓRIA, CRISTO VIRÁ<BR><font size="1">Hino nº 346</font></a></li>
+<li><a href="92.html" target="_self">CABEÇA DA IGREJA ÉS Ó CRISTO<BR><font size="1">Hino nº 92</font></a></li>
+<li><a href="332.html" target="_self">CA SOFREMOS AFLIÇÃO<BR><font size="1">Hino nº 332</font></a></li>
+<li><a href="195.html" target="_self">CAREÇO DE JESUS<BR><font size="1">Hino nº 195</font></a></li>
+<li><a href="254.html" target="_self">CASTELO FORTE É NOSSO DEUS<BR><font size="1">Hino nº 254</font></a></li>
+<li><a href="103.html" target="_self">CERCANDO O TEU SEPULCRO<BR><font size="1">Hino nº 103</font></a></li>
+<li><a href="66.html" target="_self">CHEGANDO A CRUZ DO MEU SALVADOR<BR><font size="1">Hino nº 66</font></a></li>
+<li><a href="97.html" target="_self">CHUVAS DE BÊNÇÃO TEREMOS<BR><font size="1">Hino nº 97</font></a></li>
+<li><a href="251.html" target="_self">COISAS MUNDANAS<BR><font size="1">Hino nº 251</font></a></li>
+<li><a href="63.html" target="_self">COM GRANDE AMOR JESUS<BR><font size="1">Hino nº 63</font></a></li>
+<li><a href="345.html" target="_self">COM JESUS HÁ MORADA FELIZ<BR><font size="1">Hino nº 345</font></a></li>
+<li><a href="304.html" target="_self">COM REVERENTE JÚBILO, NÓS VIMOS<BR><font size="1">Hino nº 304</font></a></li>
+<li><a href="353.html" target="_self">COMIGO ASSISTE, Ó DEUS A NOITE VEM<BR><font size="1">Hino nº 353</font></a></li>
+<li><a href="177.html" target="_self">COMPANHEIROS CONVIDADOS<BR><font size="1">Hino nº 177</font></a></li>
+<li><a href="243.html" target="_self">CONFIANDO EM MEU JESUS<BR><font size="1">Hino nº 243</font></a></li>
+<li><a href="293.html" target="_self">CONFIANDO NO SENHOR<BR><font size="1">Hino nº 293</font></a></li>
+<li><a href="142.html" target="_self">CONVIDADOS PELO SENHOR<BR><font size="1">Hino nº 142</font></a></li>
+<li><a href="236.html" target="_self">CORRE COMO UM RIO A PERFEITA PAZ<BR><font size="1">Hino nº 236</font></a></li>
+<li><a href="218.html" target="_self">CRENTES, NÃO HÁ DESCANSAR<BR><font size="1">Hino nº 218</font></a></li>
+<li><a href="203.html" target="_self">CRISTO, BOM MESTRE, EIS MEU QUERER<BR><font size="1">Hino nº 203</font></a></li>
+<li><a href="341.html" target="_self">CRISTO DO CÉU EM BREVE VIRÁ<BR><font size="1">Hino nº 341</font></a></li>
+<li><a href="261.html" target="_self">CRISTO É TUDO PARA MIM<BR><font size="1">Hino nº 261</font></a></li>
+<li><a href="68.html" target="_self">CRISTO EM TUA CRUZ HÁ GLÓRIA<BR><font size="1">Hino nº 68</font></a></li>
+<li><a href="76.html" target="_self">CRISTO JÁ RESSUSCITOU! ALELUIA<BR><font size="1">Hino nº 76</font></a></li>
+<li><a href="166.html" target="_self">CRISTO SALVA O PECADOR<BR><font size="1">Hino nº 166</font></a></li>
+<li><a href="134.html" target="_self">CRISTO TEM AMOR POR MIM<BR><font size="1">Hino nº 134</font></a></li>
+<li><a href="167.html" target="_self">CRISTO, MEU SALVADOR, VEIO A BELÉM<BR><font size="1">Hino nº 167</font></a></li>
+<li><a href="107.html" target="_self">DA CEIA PARTICIPAR<BR><font size="1">Hino nº 107</font></a></li>
+<li><a href="96.html" target="_self">DA IGREJA O ALICERCE<BR><font size="1">Hino nº 96</font></a></li>
+<li><a href="292.html" target="_self">DA TENTAÇÃO, SEMPRE DEVEMOS FUGIR<BR><font size="1">Hino nº 292</font></a></li>
+<li><a href="215.html" target="_self">DA TUA MORTE MEU SENHOR<BR><font size="1">Hino nº 215</font></a></li>
+<li><a href="206.html" target="_self">DÁ-ME, Ó MEU DEUS, UM CORAÇÃO<BR><font size="1">Hino nº 206</font></a></li>
+<li><a href="277.html" target="_self">DE JESUS A DOCE VOZ<BR><font size="1">Hino nº 277</font></a></li>
+<li><a href="222.html" target="_self">DEDICO A OFERTA AO MEU DEUS<BR><font size="1">Hino nº 222</font></a></li>
+<li><a href="78.html" target="_self">DESCENDO JESUS DOS CÉUS<BR><font size="1">Hino nº 78</font></a></li>
+<li><a href="362.html" target="_self">DESPEDE-NOS, Ó BOM JESUS<BR><font size="1">Hino nº 362</font></a></li>
+<li><a href="26.html" target="_self">DEUS É O CRIADOR<BR><font size="1">Hino nº 26</font></a></li>
+<li><a href="154.html" target="_self">DEUS ESTÁ CHAMANDO<BR><font size="1">Hino nº 154</font></a></li>
+<li><a href="13.html" target="_self">DEUS ESTÁ NO TEMPLO<BR><font size="1">Hino nº 13</font></a></li>
+<li><a href="364.html" target="_self">DEUS VOS GUARDE PELO SEU PODER<BR><font size="1">Hino nº 364</font></a></li>
+<li><a href="86.html" target="_self">DIRIJA-ME ESPÍRITO SANTO<BR><font size="1">Hino nº 86</font></a></li>
+<li><a href="202.html" target="_self">DIRIJO A TI, JESUS, MINHA ORAÇÃO<BR><font size="1">Hino nº 202</font></a></li>
+<li><a href="359.html" target="_self">DO MEU PAÍS ANGOLA<BR><font size="1">Hino nº 359</font></a></li>
+<li><a href="149.html" target="_self">DO PAÍS DISTANTE<BR><font size="1">Hino nº 149</font></a></li>
+<li><a href="151.html" target="_self">DO PECADO RESULTA AGONIA<BR><font size="1">Hino nº 151</font></a></li>
+<li><a href="42.html" target="_self">DO TRONCO RUDE E FORTE<BR><font size="1">Hino nº 42</font></a></li>
+<li><a href="322.html" target="_self">DORMIR EM CRISTO, SIM É BOM<BR><font size="1">Hino nº 322</font></a></li>
+<li><a href="52.html" target="_self">EIS DOS ANJOS A HARMONIA<BR><font size="1">Hino nº 52</font></a></li>
+<li><a href="81.html" target="_self">EIS MORTO O SALVADOR<BR><font size="1">Hino nº 81</font></a></li>
+<li><a href="303.html" target="_self">EIS OS MILHÕES, QUE EM TREVAS TÃO MEDONHAS<BR><font size="1">Hino nº 303</font></a></li>
+<li><a href="55.html" target="_self">EIS QUE CHEFE TÃO GLORIOSO<BR><font size="1">Hino nº 55</font></a></li>
+<li><a href="132.html" target="_self">EIS QUE CRISTO VEM A TERRA<BR><font size="1">Hino nº 132</font></a></li>
+<li><a href="100.html" target="_self">EIS-NOS Ó PASTOR DIVINO!<BR><font size="1">Hino nº 100</font></a></li>
+<li><a href="344.html" target="_self">EM BREVE A VIDA VAI FINDAR<BR><font size="1">Hino nº 344</font></a></li>
+<li><a href="253" target="_self">EM JESUS CONFIAR, SUA LEI OBSERVAR<BR><font size="1">Hino nº 253</font></a></li>
+<li><a href="45.html" target="_self">EM LINDA NOITE AO MUNDO EXUL<BR><font size="1">Hino nº 45</font></a></li>
+<li><a href="274.html" target="_self">EM NADA PONHO A MINHA FÉ<BR><font size="1">Hino nº 274</font></a></li>
+<li><a href="106.html" target="_self">ENQUANTO, Ó SALVADOR, TEU LIVRO LER<BR><font size="1">Hino nº 106</font></a></li>
+<li><a href="170.html" target="_self">ESCUTA A VOZ DO BOM JESUS<BR><font size="1">Hino nº 170</font></a></li>
+<li><a href="372.html" target="_self">ESCUTA ESTA ORAÇÃO<BR><font size="1">Hino nº 372</font></a></li>
+<li><a href="295.html" target="_self">ESPALHEMOS TODOS A SEMENTE SANTA<BR><font size="1">Hino nº 295</font></a></li>
+<li><a href="267.html" target="_self">ESPERO SEMPRE NO MEU DEUS<BR><font size="1">Hino nº 267</font></a></li>
+<li><a href="87.html" target="_self">ESPÍRITO PODEROSO!<BR><font size="1">Hino nº 87</font></a></li>
+<li><a href="85.html" target="_self">ESPÍRITO VIVIFICANTE<BR><font size="1">Hino nº 85</font></a></li>
+<li><a href="320.html" target="_self">ESTANDO COM JESUS<BR><font size="1">Hino nº 320</font></a></li>
+<li><a href="355.html" target="_self">ESTRELA DA NOITE NOSSO JESUS<BR><font size="1">Hino nº 355</font></a></li>
+<li><a href="141.html" target="_self">ETERNA LUZ CELESTE<BR><font size="1">Hino nº 141</font></a></li>
+<li><a href="285.html" target="_self">EU AMO A HISTÓRIA QUE FALA NO SENHOR<BR><font size="1">Hino nº 285</font></a></li>
+<li><a href="348.html" target="_self">EU AVISTO UMA TERRA FELIZ<BR><font size="1">Hino nº 348</font></a></li>
+<li><a href="238.html" target="_self">EU ESTOU CONVOSCO SEMPRE<BR><font size="1">Hino nº 238</font></a></li>
+<li><a href="234.html" target="_self">EU TENHO PROMETIDO<BR><font size="1">Hino nº 234</font></a></li>
+<li><a href="184.html" target="_self">FALA A MINHA ALMA, Ó CRISTO<BR><font size="1">Hino nº 184</font></a></li>
+<li><a href="192.html" target="_self">FALA SENHOR, AO TEU SERVO<BR><font size="1">Hino nº 192</font></a></li>
+<li><a href="109.html" target="_self">FAMINTO, Ó SALVADOR<BR><font size="1">Hino nº 109</font></a></li>
+<li><a href="228.html" target="_self">FELIZ É O HOMEM QUE NÃO VAI<BR><font size="1">Hino nº 228</font></a></li>
+<li><a href="269.html" target="_self">FILHO DE DEUS, O NOSSO PAI<BR><font size="1">Hino nº 269</font></a></li>
+<li><a href="57.html" target="_self">FILHOS DE JERUSALÉM<BR><font size="1">Hino nº 57</font></a></li>
+<li><a href="77.html" target="_self">FINDOU-SE A LUTA DE JESUS<BR><font size="1">Hino nº 77</font></a></li>
+<li><a href="200.html" target="_self">FIRME NAS PROMESSAS DO MEU SALVADOR<BR><font size="1">Hino nº 200</font></a></li>
+<li><a href="38.html" target="_self">FOI NA GRUTA DE BELÉM<BR><font size="1">Hino nº 38</font></a></li>
+<li><a href="347.html" target="_self">FONTE DE AMOR PERENE<BR><font size="1">Hino nº 347</font></a></li>
+<li><a href="17.html" target="_self">FONTE TU DE TODA A BÊNÇÃO<BR><font size="1">Hino nº 17</font></a></li>
+<li><a href="163.html" target="_self">FRANQUEADA A PORTA A NÓS ESTÁ<BR><font size="1">Hino nº 163</font></a></li>
+<li></li>
+<li></li>
+
+         
+         </ul></td>   </tr>
+     <tr>
+       <td align="left">&nbsp;</td>
+     </tr>
+     
+    </table>
+  </div> 
+    
+
+	
+   
+<div data-role="footer" style="position:fixed; bottom:0px; z-index:1000" >
+ <center> <input type="button" data-icon="home" value="Home" onClick="window.open('index.html')">
+   <input type="button" data-icon="info" value="Sobre" onClick="window.open('sobre.html')"> <input type="button" data-icon="star" value="Favoritos" onClick="window.open('favoritos.html')">
+   <br>
+    <font size="1">&copy; 2015 - Todos os direitos reservados.</font></center>
+  </div> 
+ 
+   <nav id="menu" data-theme="a">
+     <ul>
+		  <li><a href="index.html">HOME</a></li>
+		  <li><a href="#">SESS&Otilde;ES</a>
+		    <ul>
+              <li><a href="index.html" target="_self">PORTUGU&Ecirc;S</a></li>
+              <li><a href="umb/index.html" target="_self">UMBUNDU</a></li>
+              <li><a href="ng/index.html" target="_self">NGANGUELA</a></li>
+              <li><a href="cok/index.html" target="_self">COKW&Ecirc;</a></li>
+              <li><a href="kimb/index.html" target="_self">KIMBUNDU</a></li>
+                <li><a href="fiote/index.html" target="_self">FIOTE</a></li>
+                <li><a href="kik/index.html" target="_self">KIKONGO</a></li>
+                  <li><a href="kwm/index.html" target="_self">KWANHAMA</a></li>
+		    </ul>
+		  </li>
+          <li><a href="invocatoria.html" target="_self">INVOCATÓRIA</a>
+           <ul>
+		          <li><a href="inv_advento.html" target="_self">ADVENTO</a></li>
+		          <li><a href="inv_natal.html" target="_self">NATAL</a></li>
+                  <li><a href="inv_epifania.html" target="_self">EPIFANIA</a></li>
+                  <li><a href="inv_quaresma.html" target="_self">QUARESMA</a></li>
+                  <li><a href="inv_ramos.html" target="_self">DOMINGO DE RAMOS</a></li>
+                  <li><a href="inv_pascoa.html" target="_self">PÁSCOA</a></li>
+                  <li><a href="inv_pentecostes.html" target="_self">PENTECOSTES</a></li>
+            </ul>
+		  <li><a href="#">LITANIA</a>
+		    <ul>
+		      <li><a href="lit_chamada_adoracao.html" target="_self">CHAMADA PARA ADORAÇÃO</a>
+		  
+	          </li>
+		      <li><a href="lit_pecado.html" target="_self">CONFISSÃO DO PECADO</a></li>
+		      <li><a href="lit_suplica_geral.html" target="_self">SÚPLICA GERAL</a></li>
+               <li><a href="lit_acao_graca.html" target="_self">ACÇÃO DE GRAÇAS</a></li>
+                <li><a href="lit_peticao_coragem.html" target="_self">PETIÇÃO DE CORAGEM</a></li>
+                 <li><a href="lit_natal.html" target="_self">NATAL</a></li>
+                  <li><a href="lit_ramos.html" target="_self">DOMINGO DE RAMOS</a></li>
+                   <li><a href="lit_ramos.html" target="_self">PÁSCOA</a></li>
+                    <li><a href="lit_pentecostes.html" target="_self">PENTECOSTES</a></li>
+                     <li><a href="lit_ano.html" target="_self">PRIMEIRO DIA DO ANO</a></li>
+	        </ul>
+       </li>
+		  <li><a href="salmos.html" target="_self">SALMOS</a>
+		    
+		  </li>
+          <li><a href="credo.html" target="_self" >CREDO APOSTÓLICO</a>
+		    
+		  </li>
+           <li><a href="oracao.html"  target="_self">ORAÇÃO DO SENHOR</a>
+		    
+		  </li>
+          <li><a href="sobre.html"  target="_self">SOBRE NÓS</a>
+		    
+		  </li>
+     </ul>
+  </nav> 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>IECA - HINÁRIO EVANGÉLICO</title>
+<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="css/addons/jquery.mmenu.dragopen.css" />
+        <link type="text/css" rel="stylesheet" href="css/screen.css" />
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+h4 {
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Arial;
+}
+h2 {
+	font-size: 1em;
+}
+h3 {
+	font-size: 14px;
+}
+h5 {
+	font-size: 10px;
+}
+h6 {
+	font-size: 9px;
+}
+a {
+	font-family: arial;
+	font-size: 1em;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body,td,th {
+	font-size: 1em;
+}
+</style>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/hammer.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript" src="js/addons/jquery.mmenu.dragopen.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+		<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+    <script>
+			$(function() {
+				var $menu = $('nav#menu'),
+					$html = $('html, body');
+
+				$menu.mmenu({
+					dragOpen: true
+				});
+
+				$menu.find( 'li > a' ).on(
+					'click',
+					function( e )
+					{
+						var href = $(this).attr( 'href' );
+
+						//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+						if ( href.slice( 0, 1 ) == '#' )
+						{
+							$menu.one(
+								'closed.mm',
+								function()
+								{
+									setTimeout(
+										function()
+										{
+											$html.animate({
+												scrollTop: $( href ).offset().top
+											});	
+										}, 10
+									);	
+								}
+							);
+						}
+					}
+				);
+			});
+		</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+<div class="header FixedTop" >
+<a href="oracao.html#menu"></a>PORTUGUÊS
+</div>
+<div data-role="header">	
+		<center><h2>IECA - HINÁRIO EVANGÉLICO</h2></center>	
+    </div>
+		<table width="100%">
+       
+			
+				<tr>
+					<td colspan="2" align="left"><h3 align="center">ORAÇÃO DO SENHOR</h3><center>
+					Pai nosso que estás nos céus, santificado seja o teu nome, venha o teu reino, seja feita a tua vontade, assim na terra como no céu, o pão nosso de cada dia que nos dá hoje, 
+					perdoa-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores; e não deixes cair em tentação; mas livra-nos do mal; pois teu é o reino, e o poder, e a glória, para sempre.<br>Ámen
+					</center></td>
+			    </tr>				
+			
+		</table>
+   
+<div data-role="footer" style="position:fixed; bottom:0px">
+   <center><font size="1">&copy; 2015 - Todos os direitos reservados.</font></center>
+
+
+   <nav id="menu" data-theme="a">
+   
+	 <ul id="MenuBar1" class="MenuBarVertical">
+ <li>  <center><img src="images/logo-ieca.png" width="36" height="38"><br>IECA</center></li>
+		  <li><a href="index.html" target="_self">HOME</a></li>
+		  <li><a href="#" class="MenuBarItemSubmenu">SESS&Otilde;ES</a>
+		    <ul>
+              <li><a href="index.html" target="_top">PORTUGU&Ecirc;S</a></li>
+              <li><a href="umb/index.html" target="_top">UMBUNDU</a></li>
+              <li><a href="ng/index.html" target="_top">NGANGUELA</a></li>
+              <li><a href="cok/index.html" target="_top">COKW&Ecirc;</a></li>
+              <li><a href="kimb/index.html" target="_top">KIMBUNDU</a></li>
+                <li><a href="fiote/index.html" target="_top">FIOTE</a></li>
+                <li><a href="kik/index.html" target="_top">KIKONGO</a></li>
+                  <li><a href="kwm/index.html" target="_top">KWANHAMA</a></li>
+		    </ul>
+		  </li>
+          <li><a class="MenuBarItemSubmenu" href="invocatoria.html" target="_top">INVOCATÓRIA</a>
+           <ul>
+		          <li><a href="inv_advento.html" target="_top">ADVENTO</a></li>
+		          <li><a href="inv_natal.html" target="_top">NATAL</a></li>
+                  <li><a href="inv_epifania.html" target="_top">EPIFANIA</a></li>
+                  <li><a href="inv_quaresma.html" target="_top">QUARESMA</a></li>
+                  <li><a href="inv_ramos.html" target="_top">DOMINGO DE RAMOS</a></li>
+                  <li><a href="inv_pascoa.html" target="_top">PÁSCOA</a></li>
+                  <li><a href="inv_pentecostes.html" target="_top">PENTECOSTES</a></li>
+            </ul>
+		  <li><a class="MenuBarItemSubmenu" href="#">LITANIA</a>
+		    <ul>
+		       <li><a class="MenuBarItemSubmenu" href="lit_chamada_adoracao.html" target="_self">CHAMADA PARA ADORAÇÃO</a>
+		  
+	          </li>
+		      <li><a href="lit_pecado.html" target="_top">CONFISSÃO DO PECADO</a></li>
+		      <li><a href="lit_suplica_geral.html" target="_top">SÚPLICA GERAL</a></li>
+               <li><a href="lit_acao_graca.html" target="_top">ACÇÃO DE GRAÇAS</a></li>
+                <li><a href="lit_peticao_coragem.html" target="_top">PETIÇÃO DE CORAGEM</a></li>
+                 <li><a href="lit_natal.html" target="_top">NATAL</a></li>
+                  <li><a href="lit_ramos.html" target="_top">DOMINGO DE RAMOS</a></li>
+                   <li><a href="lit_ramos.html" target="_top">PÁSCOA</a></li>
+                    <li><a href="lit_pentecostes.html" target="_top">PENTECOSTES</a></li>
+                     <li><a href="lit_ano.html" target="_top">PRIMEIRO DIA DO ANO</a></li>
+	        </ul>
+       </li>
+		  <li><a href="salmos.html" target="_top" class="MenuBarItemSubmenu">SALMOS</a>
+		    
+		  </li>
+          <li><a href="credo.html" target="_top" class="MenuBarItemSubmenu">CREDO APOSTÓLICO</a>
+		    
+		  </li>
+           <li><a href="oracao.html" class="MenuBarItemSubmenu" target="_self">ORAÇÃO DO SENHOR</a>
+		    
+		  </li>
+           <li><a href="sobre.html" class="MenuBarItemSubmenu" target="_self">SOBRE NÓS</a>
+		    
+		  </li>
+     </ul>
+  </nav>  
+   
+</div>
+
+</body>
+</html>
